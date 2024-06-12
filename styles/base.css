@@ -3,64 +3,82 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ADD8E6; /* Updated to hex for consistency */
-    color: #333;
+    background-color: #ADD8E6; /* Light blue background color */
+    color: #333; /* Dark text color */
 }
 
 /* Header styles */
 header {
-    background-color: #4CAF50;
-    color: white;
-    padding: 1rem;
-    text-align: center;
+    background-color: #4CAF50; /* Green header background color */
+    color: white; /* White text color */
+    padding: 1rem; /* Padding around header content */
+    text-align: center; /* Center-align header content */
+}
+
+header h1 {
+    margin: 0; /* Remove margin for h1 */
 }
 
 header nav {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
+    display: flex; /* Flex display for navigation */
+    justify-content: center; /* Center-align navigation items */
+    gap: 1rem; /* Spacing between navigation items */
+    margin-top: 1rem; /* Margin space above navigation */
 }
 
 header nav a {
-    color: navy;
-    text-decoration: none;
-    padding: 0.5rem;
-    transition: background-color 0.3s;
+    color: navy; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 0.5rem; /* Padding around navigation links */
+    transition: background-color 0.3s; /* Smooth background color transition on hover */
 }
 
 header nav a:hover {
-    background-color: #45a049;
-    border-radius: 4px;
+    background-color: #45a049; /* Darker green background color on hover */
+    border-radius: 4px; /* Rounded corners on hover */
 }
 
 /* Main content styles */
 main {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
+    max-width: 800px; /* Maximum width for main content */
+    margin: 2rem auto; /* Center-align main content with some margin */
+    padding: 1rem; /* Padding around main content */
 }
 
 .card {
-    background-color: white;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: white; /* White background for card sections */
+    padding: 1rem; /* Padding around card content */
+    margin-bottom: 1.5rem; /* Margin space between cards */
+    border-radius: 8px; /* Rounded corners for cards */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
 }
 
 .card h2 {
-    margin-top: 0;
+    margin-top: 0; /* Remove top margin for card headings */
+}
+
+.card img {
+    max-width: 100%; /* Ensure images fit within their containers */
+    height: auto; /* Maintain aspect ratio of images */
+}
+
+.card ul {
+    list-style-type: none; /* Remove default list style */
+    padding: 0; /* Remove padding from unordered list */
+}
+
+.card ul li {
+    margin-bottom: 0.5rem; /* Add margin space between list items */
 }
 
 /* Footer styles */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1rem;
+    background-color: #333; /* Dark footer background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align footer content */
+    padding: 1rem; /* Padding around footer content */
 }
 
 footer p {
-    margin: 0.5rem 0;
+    margin: 0.5rem 0; /* Margin space for paragraphs within footer */
 }

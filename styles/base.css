@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: lightblue;
+    background-color: #ADD8E6; /* Updated to hex for consistency */
     color: #333;
 }
 

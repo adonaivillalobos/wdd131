@@ -23,7 +23,7 @@ header nav {
 }
 
 header nav a {
-    color: white;
+    color: navy;
     text-decoration: none;
     padding: 0.5rem;
     transition: background-color 0.3s;

@@ -1,9 +1,36 @@
-// JavaScript to populate current year and last modified date
+// JavaScript to populate the current year and last modified date
 
-// Get the current year and update the element with ID 'currentyear'
-const currentYear = new Date().getFullYear();
-document.getElementById('currentyear').textContent = currentYear;
+// Function to update the current year
+function updateCurrentYear() {
+    const currentYearElement = document.getElementById('currentyear');
+    if (currentYearElement) {
+        const currentYear = new Date().getFullYear();
+        currentYearElement.textContent = currentYear;
+    } else {
+        console.error("Element with ID 'currentyear' not found.");
+    }
+}
 
-// Get the last modified date and update the element with ID 'lastModified'
-const lastModifiedDate = document.lastModified;
-document.getElementById('lastModified').textContent = 'Last modified: ' + lastModifiedDate;
+// Function to update the last modified date
+function updateLastModifiedDate() {
+    const lastModifiedElement = document.getElementById('lastModified');
+    if (lastModifiedElement) {
+        const lastModifiedDate = new Date(document.lastModified);
+        const formattedDate = lastModifiedDate.toLocaleString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric',
+            hour: '2-digit',
+            minute: '2-digit'
+        });
+        lastModifiedElement.textContent = 'Last modified: ' + formattedDate;
+    } else {
+        console.error("Element with ID 'lastModified' not found.");
+    }
+}
+
+// Call the functions to update the year and last modified date
+document.addEventListener('DOMContentLoaded', (event) => {
+    updateCurrentYear();
+    updateLastModifiedDate();
+});

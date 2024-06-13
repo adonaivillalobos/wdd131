@@ -3,14 +3,14 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: red; /* Light blue background color */
+    background-color: lightblue; /* Light blue background color */
     color: #333; /* Dark text color */
     line-height: 1.6; /* Improved readability */
 }
 
 /* Header styles */
 header {
-    background-color: #4CAF50; /* Green header background color */
+    background-color: gray; /* Green header background color */
     color: white; /* White text color */
     padding: 1rem; /* Padding around header content */
     text-align: center; /* Center-align header content */
@@ -29,7 +29,7 @@ header nav {
 }
 
 header nav a {
-    color: white; /* White link color for better contrast */
+    color: blue; /* White link color for better contrast */
     text-decoration: none; /* Remove underline from links */
     padding: 0.5rem 1rem; /* Padding around navigation links for larger clickable area */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color on hover */

@@ -5,6 +5,7 @@ body {
     padding: 0;
     background-color: #ADD8E6; /* Light blue background color */
     color: #333; /* Dark text color */
+    line-height: 1.6; /* Improved readability */
 }
 
 /* Header styles */
@@ -17,6 +18,7 @@ header {
 
 header h1 {
     margin: 0; /* Remove margin for h1 */
+    font-size: 2rem; /* Ensure readable font size */
 }
 
 header nav {
@@ -27,15 +29,16 @@ header nav {
 }
 
 header nav a {
-    color: navy; /* Link color */
+    color: white; /* White link color for better contrast */
     text-decoration: none; /* Remove underline from links */
-    padding: 0.5rem; /* Padding around navigation links */
-    transition: background-color 0.3s; /* Smooth background color transition on hover */
+    padding: 0.5rem 1rem; /* Padding around navigation links for larger clickable area */
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color on hover */
+    border-radius: 4px; /* Rounded corners for links */
 }
 
 header nav a:hover {
     background-color: #45a049; /* Darker green background color on hover */
-    border-radius: 4px; /* Rounded corners on hover */
+    color: #fff; /* Ensure text remains readable on hover */
 }
 
 /* Main content styles */
@@ -47,7 +50,7 @@ main {
 
 .card {
     background-color: white; /* White background for card sections */
-    padding: 1rem; /* Padding around card content */
+    padding: 1.5rem; /* Increased padding for better spacing */
     margin-bottom: 1.5rem; /* Margin space between cards */
     border-radius: 8px; /* Rounded corners for cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
@@ -55,20 +58,40 @@ main {
 
 .card h2 {
     margin-top: 0; /* Remove top margin for card headings */
+    font-size: 1.5rem; /* Ensure readable font size */
+    color: #4CAF50; /* Matching heading color with header */
+}
+
+.card p {
+    margin-bottom: 1rem; /* Add space between paragraphs for better readability */
 }
 
 .card img {
     max-width: 100%; /* Ensure images fit within their containers */
     height: auto; /* Maintain aspect ratio of images */
+    border-radius: 4px; /* Slight rounding of image corners */
+    margin-top: 1rem; /* Add space above images */
 }
 
 .card ul {
     list-style-type: none; /* Remove default list style */
     padding: 0; /* Remove padding from unordered list */
+    margin: 1rem 0; /* Add margin to separate from other content */
 }
 
 .card ul li {
     margin-bottom: 0.5rem; /* Add margin space between list items */
+    font-size: 1rem; /* Ensure readable font size */
+}
+
+.card ul li a {
+    color: #4CAF50; /* Matching link color with theme */
+    text-decoration: underline; /* Underline links for clarity */
+    transition: color 0.3s; /* Smooth transition for link color on hover */
+}
+
+.card ul li a:hover {
+    color: #45a049; /* Darker green color on hover */
 }
 
 /* Footer styles */
@@ -81,4 +104,9 @@ footer {
 
 footer p {
     margin: 0.5rem 0; /* Margin space for paragraphs within footer */
+    font-size: 1rem; /* Ensure readable font size */
+}
+
+footer span {
+    font-weight: bold; /* Highlight the current year */
 }

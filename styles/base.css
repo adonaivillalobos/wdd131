@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #ADD8E6; /* Light blue background color */
+    background-color: red; /* Light blue background color */
     color: #333; /* Dark text color */
     line-height: 1.6; /* Improved readability */
 }

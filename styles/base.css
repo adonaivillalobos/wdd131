@@ -71,6 +71,7 @@ main {
     margin-bottom: 1rem; /* Add space between paragraphs for better readability */
     flex: 1; /* Allow paragraph to take remaining space */
     text-align: left; /* Align paragraph text to the left */
+    font-size: 1.1rem; /* Increase font size for paragraphs */
 }
 
 .card img {
@@ -124,4 +125,5 @@ footer p {
 footer span {
     font-weight: bold; /* Highlight the current year */
 }
+
 

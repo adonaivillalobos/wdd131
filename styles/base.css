@@ -10,7 +10,7 @@ body {
 
 /* Header styles */
 header {
-    background-color: gray; /* Green header background color */
+    background-color: #4CAF50; /* Green header background color */
     color: white; /* White text color */
     padding: 1rem; /* Padding around header content */
     text-align: center; /* Center-align header content */
@@ -29,7 +29,7 @@ header nav {
 }
 
 header nav a {
-    color: blue; /* White link color for better contrast */
+    color: #fff; /* White link color for better contrast */
     text-decoration: none; /* Remove underline from links */
     padding: 0.5rem 1rem; /* Padding around navigation links for larger clickable area */
     transition: background-color 0.3s, color 0.3s; /* Smooth transition for background color and text color on hover */
@@ -54,6 +54,8 @@ main {
     margin-bottom: 1.5rem; /* Margin space between cards */
     border-radius: 8px; /* Rounded corners for cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Center-align items vertically */
 }
 
 .card h2 {
@@ -64,13 +66,14 @@ main {
 
 .card p {
     margin-bottom: 1rem; /* Add space between paragraphs for better readability */
+    flex: 1; /* Allow paragraph to take remaining space */
 }
 
 .card img {
-    max-width: 100%; /* Ensure images fit within their containers */
+    max-width: 200px; /* Adjust image width as needed */
     height: auto; /* Maintain aspect ratio of images */
     border-radius: 4px; /* Slight rounding of image corners */
-    margin-top: 1rem; /* Add space above images */
+    margin-left: auto; /* Push images to the right */
 }
 
 .card ul {

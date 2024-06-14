@@ -55,22 +55,26 @@ main {
     border-radius: 8px; /* Rounded corners for cards */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Box shadow for cards */
     display: flex; /* Use flexbox for layout */
-    align-items: center; /* Center-align items vertically */
+    flex-direction: column; /* Arrange children elements in a column */
+    align-items: center; /* Center-align items horizontally */
 }
 
 .card h2 {
     margin-top: 0; /* Remove top margin for card headings */
     font-size: 1.5rem; /* Ensure readable font size */
     color: #4CAF50; /* Matching heading color with header */
+    text-align: center; /* Center align the h2 text */
+    order: -1; /* Move the h2 to the top within the flex container */
 }
 
 .card p {
     margin-bottom: 1rem; /* Add space between paragraphs for better readability */
     flex: 1; /* Allow paragraph to take remaining space */
+    text-align: left; /* Align paragraph text to the left */
 }
 
 .card img {
-    max-width: 200px; /* Adjust image width as needed */
+    max-width: 300px; /* Adjust image width as needed */
     height: auto; /* Maintain aspect ratio of images */
     border-radius: 4px; /* Slight rounding of image corners */
     margin-left: auto; /* Push images to the right */
@@ -113,3 +117,4 @@ footer p {
 footer span {
     font-weight: bold; /* Highlight the current year */
 }
+

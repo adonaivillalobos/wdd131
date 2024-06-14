@@ -74,21 +74,28 @@ main {
 }
 
 .card img {
-    max-width: 300px; /* Adjust image width as needed */
+    max-width: 100%; /* Make sure images do not exceed their container width */
     height: auto; /* Maintain aspect ratio of images */
     border-radius: 4px; /* Slight rounding of image corners */
-    margin-left: auto; /* Push images to the right */
+    margin: 0 auto 1rem auto; /* Center align the image horizontally and add space at the bottom */
+    display: block; /* Ensure images behave as block elements */
 }
 
 .card ul {
     list-style-type: none; /* Remove default list style */
     padding: 0; /* Remove padding from unordered list */
-    margin: 1rem 0; /* Add margin to separate from other content */
+    margin-top: 1rem; /* Add margin space between image and ul */
+    text-align: center; /* Center-align list items */
 }
 
 .card ul li {
     margin-bottom: 0.5rem; /* Add margin space between list items */
     font-size: 1rem; /* Ensure readable font size */
+    display: inline-block; /* Display list items inline */
+}
+
+.card ul li:not(:last-child) {
+    margin-right: 1rem; /* Add space between list items */
 }
 
 .card ul li a {

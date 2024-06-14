@@ -24,6 +24,7 @@ header {
 header h1 {
     margin: 0; /* Remove margin for h1 */
     font-size: 2rem; /* Ensure readable font size */
+    color: blue;
 }
 
 header nav {

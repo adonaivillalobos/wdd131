@@ -1,36 +1,29 @@
-// JavaScript to populate the current year and last modified date
+// getdates.js
 
-// Function to update the current year
-function updateCurrentYear() {
-    const currentYearElement = document.getElementById('currentyear');
-    if (currentYearElement) {
-        const currentYear = new Date().getFullYear();
-        currentYearElement.textContent = currentYear;
-    } else {
-        console.error("Element with ID 'currentyear' not found.");
+// Function to get the current year
+function getCurrentYear() {
+    return new Date().getFullYear();
+}
+
+// Function to display current year in footer
+function displayCurrentYear() {
+    const currentYearSpan = document.getElementById('currentyear');
+    if (currentYearSpan) {
+        currentYearSpan.textContent = getCurrentYear();
     }
 }
 
-// Function to update the last modified date
-function updateLastModifiedDate() {
-    const lastModifiedElement = document.getElementById('lastModified');
-    if (lastModifiedElement) {
-        const lastModifiedDate = new Date(document.lastModified);
-        const formattedDate = lastModifiedDate.toLocaleString('en-US', {
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit'
-        });
-        lastModifiedElement.textContent = 'Last modified: ' + formattedDate;
-    } else {
-        console.error("Element with ID 'lastModified' not found.");
+// Function to display last modified date in footer
+function displayLastModified() {
+    const lastModifiedParagraph = document.getElementById('lastModified');
+    if (lastModifiedParagraph) {
+        const lastModifiedDate = document.lastModified;
+        lastModifiedParagraph.textContent = `Last modified: ${lastModifiedDate}`;
     }
 }
 
-// Call the functions to update the year and last modified date
-document.addEventListener('DOMContentLoaded', (event) => {
-    updateCurrentYear();
-    updateLastModifiedDate();
+// Call functions when the DOM content is loaded
+document.addEventListener('DOMContentLoaded', function() {
+    displayCurrentYear();
+    displayLastModified();
 });

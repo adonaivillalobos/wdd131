@@ -19,7 +19,7 @@
   
   header {
     background-color: lightblue;
-    color: #fff;
+    color: Black;
     padding: 20px;
     text-align: left;
   }
@@ -68,8 +68,7 @@
     clear: both;
   }
   
-
-  /*JavaScrip */
+/*JavaScrip */
 
   .hamburger {
     display: none; /* Hide the hamburger button on larger screens */
@@ -82,7 +81,7 @@
     font-size: 24px;
     cursor: pointer;
   }
-  
+
   /* Mobile View Styles */
   
   @media only screen and (max-width: 768px) {

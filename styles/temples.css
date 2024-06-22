@@ -7,12 +7,17 @@ body {
   }
   
   h1 {
-    display: inline-block; /* display h1 and nav on same line */
-    margin-right: 20px; /* add some space between h1 and nav */
+    display: block; /* display h1 as a block element */
+  }
+  
+  h2 {
+    margin-top: 20px; /* add some space between h1 and h2 */
   }
   
   nav {
-    display: inline-block; /* display h1 and nav on same line */
+    display: flex;
+    justify-content: flex-end; /* align nav to the right */
+    margin-top: 20px; /* add some space between h2 and nav */
   }
   
   nav ul {

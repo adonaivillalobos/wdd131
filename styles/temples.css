@@ -36,15 +36,10 @@
     padding: 20px;
   }
   
-  .gallery-row {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-  }
-  
   figure {
-    margin: 0 10px;
-    width: calc(33.33% - 20px);
+    display: inline-block;
+    margin: 10px;
+    width: 30%;
   }
   
   figure img {
@@ -76,12 +71,12 @@
   
   @media only screen and (max-width: 768px) {
     figure {
-      width: calc(50% - 20px);
+      width: 45%;
     }
   }
   
   @media only screen and (max-width: 480px) {
     figure {
-      width: 100%;
+      width: 90%;
     }
   }

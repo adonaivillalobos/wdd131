@@ -41,8 +41,8 @@ body {
   
   nav {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: right;
+    align-items: right;
     padding: 20px;
     background-color: lightcyan;
     color: black;

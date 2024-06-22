@@ -15,7 +15,10 @@ header {
   }
   h1 {
     text-align: left;
-    color: black;
+    margin-left: 20px;
+    font-size: 36px; /* increase font size for better visibility */
+    font-weight: bold; /* make the text bold for emphasis */
+    color: #333; /* darken the text color for better contrast */
   }
   
   h2 {

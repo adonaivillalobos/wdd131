@@ -16,14 +16,13 @@ body {
   }
   
   .container {
-    display: flex;
-    flex-wrap: wrap; /* add this to allow images to wrap to the next line */
-    justify-content: center;
+    text-align: center; /* add this to center the images */
     padding: 20px;
   }
   
   figure {
-    width: calc(33.33% - 20px); /* adjust the width to fit 3 images per row */
+    display: inline-block; /* add this to align images horizontally */
+    width: 30%; /* adjust the width to fit 3 images per row */
     margin: 10px; /* add some margin for spacing */
     border: 1px solid black;
     overflow: hidden;
@@ -44,7 +43,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    align-items: center; /* change align-items to center */
+    align-items: center;
     padding: 20px;
     background-color: lightcyan;
     color: black;

@@ -1,6 +1,6 @@
 body {
-    background-color: #663399;
-    color: #fff;
+    background-color: white;
+    color: white;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
@@ -25,7 +25,7 @@ body {
     width: 300px; /* adjust the width to your desired size */
     height: 200px; /* adjust the height to your desired size */
     margin: 10px; /* add some margin for spacing */
-    border: 1px solid #fff;
+    border: 1px solid black;
     overflow: hidden;
   }
   
@@ -43,7 +43,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: right;
     padding: 10px;
     background-color: #330066;
   }

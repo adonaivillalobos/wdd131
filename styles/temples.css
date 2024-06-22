@@ -16,21 +16,46 @@ body {
   }
   
   .container {
-    text-align: center;
+    max-width: 800px; /* limited width */
+    margin: 0 auto; /* center horizontally */
     padding: 20px;
   }
   
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: lightcyan;
+    color: black;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.2s ease; /* add hover effect */
+  }
+  
+  nav a:hover {
+    color: #666; /* hover color */
+  }
+  
+  main {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    grid-gap: 10px;
+  }
+  
   figure {
-    display: block;
-    margin: 11px;
-    border: 3px solid black;
-    overflow: hidden;
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px;
   }
   
   figure img {
-    width: 200px; /* set a fixed width */
-    height: 150px; /* set a fixed height */
-    object-fit: contain; /* ensure the image is scaled to fit the container */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
   }
   
   figure p {
@@ -39,29 +64,9 @@ body {
     color: black;
   }
   
-  nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: lightcyan;
-    color: black;
-  }
-  
-  nav a, li {
-    margin: 0 10px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  footer {
-    background-color: lightcyan;
-    color: black;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-  }
-  
-  footer p {
-    margin: 0;
+  /* Mobile view */
+  @media (max-width: 600px) {
+    main {
+      grid-template-columns: 1fr; /* 1 column on mobile */
+    }
   }

@@ -1,4 +1,4 @@
-/* CSS */
+/* temples.css */
 
 /* Global Styles */
 
@@ -11,80 +11,127 @@
   body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    color: lightblue;
-    background-color: white;
+    color: #333;
+    background-color: #f9f9f9;
   }
   
-  /* Header Styles */
-  
   header {
-    background-color: rgb(102, 153, 255);
-    color: black;
-    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
   }
   
   header h1 {
     margin: 0;
   }
-  header nav a {
-    color: black;
-  }
-  h2 {
-    text-align: center;
-    color: black;
-  }
-  
-  /* Main Content Styles */
   
   main {
-    max-width: 800px;
-    margin: 40px auto;
-    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   figure {
-    display: inline-block;
-    margin: 10px;
+    margin: 20px;
     width: 30%;
-    vertical-align: top; /* Add this line to align figures to the top */
   }
   
   figure img {
     width: 100%;
-    height: 200px;
+    height: 150px;
     object-fit: cover;
-    border: 1px solid #ddd;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
   figcaption {
     font-size: 18px;
-    color: #666;
+    color: #333;
+    text-align: center;
     padding: 10px;
   }
   
-  /* Footer Styles */
-  
   footer {
-    background-color: lightblue;
-    color: black;
-    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
     text-align: center;
     clear: both;
   }
   
-  /* Mobile View Styles */
+  footer p {
+    margin: 0;
+  }
   
-  @media only screen and (max-width: 768px) {
+  /* Navigation Menu Styles */
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+  }
+  
+  nav a:hover {
+    color: #ccc;
+  }
+  
+  /* Hamburger Menu Styles */
+  
+  .hamburger {
+    display: none; /* Hide the hamburger button on larger screens */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  nav.open {
+    display: block;
+  }
+  
+  nav a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  /* Media Queries */
+  
+  @media only screen and (max-width: 767px) {
+   .hamburger {
+      display: block;
+    }
+    nav {
+      display: none; /* Hide the navigation menu on smaller screens */
+    }
+    nav.open {
+      display: block;
+    }
     figure {
-      width: 45%;
+      width: 100%;
     }
   }
   
-  @media only screen and (max-width: 480px) {
+  @media only screen and (min-width: 768px) {
+    /* temples-large.css */
     figure {
-      width: 90%;
+      width: 20%;
     }
   }

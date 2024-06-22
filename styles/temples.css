@@ -40,6 +40,7 @@
     display: inline-block;
     margin: 10px;
     width: 30%;
+    vertical-align: top; /* Add this line to align figures to the top */
   }
   
   figure img {

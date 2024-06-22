@@ -45,7 +45,17 @@ header {
     margin: 10px 0;
     color: black;
   }
-nav a {
+  
+  nav {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+    padding: 20px;
+    background-color: lightcyan;
+    color: black;
+  }
+  
+  nav a {
     margin: 0 10px;
     text-decoration: none;
     color: black;

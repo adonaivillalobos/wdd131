@@ -7,46 +7,38 @@ body {
   }
   
   h1 {
-    display: block; /* display h1 as a block element */
+    text-align: left;
+    color: black;
   }
   
   h2 {
-    margin-top: 20px; /* add some space between h1 and h2 */
-    align-items: center;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 100%; /* limited width */
+    margin: 0 auto; /* center horizontally */
+    padding: 20px;
   }
   
   nav {
     display: flex;
-    justify-content: flex-end; /* align nav to the right */
-    margin-top: 20px; /* add some space between h2 and nav */
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* display li elements next to each other */
     justify-content: space-between;
-  }
-  
-  nav li {
-    margin-right: 20px; /* add some space between li elements */
+    align-items: center;
+    padding: 20px;
+    background-color: lightcyan;
+    color: black;
   }
   
   nav a {
     text-decoration: none;
     color: black;
     transition: color 0.2s ease; /* add hover effect */
+    text-align: right;
   }
   
   nav a:hover {
-    color: #666; /* hover color */
-  }
-  
-  .container {
-    max-width: 800px; /* limited width */
-    margin: 0 auto; /* center horizontally */
-    padding: 20px;
+    color: lightblue; /* hover color */
   }
   
   main {
@@ -63,7 +55,7 @@ body {
   
   figure img {
     width: 100%;
-    height: 150px;
+    height: 100%;
     object-fit: cover;
   }
   

@@ -1,31 +1,26 @@
 body {
-    background-color: white;
-    color: white;
+    background-color: #663399;
+    color: #fff;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
   }
   
-  h1 {
-    text-align: left;
-  }
-  h2 {
+  h1, h2, h3, h4, h5, h6 {
     text-align: center;
   }
+  
   .container {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: center;
     padding: 20px;
   }
   
   figure {
-    width: 300px; /* adjust the width to your desired size */
-    height: 200px; /* adjust the height to your desired size */
+    width: 30%; /* adjust the width to fit 3 images per row */
     margin: 10px; /* add some margin for spacing */
-    border: 1px solid black;
+    border: 1px solid #fff;
     overflow: hidden;
   }
   
@@ -43,7 +38,7 @@ body {
   nav {
     display: flex;
     justify-content: center;
-    align-items: right;
+    align-items: center;
     padding: 10px;
     background-color: #330066;
   }

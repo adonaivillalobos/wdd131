@@ -25,17 +25,17 @@ body {
   
   .image-container {
     margin: 10px;
-    width: 250px;
-    height: 180px;
+    width: calc(33.33% - 20px);
+    height: 150px;
     overflow: hidden;
     border: 1px solid #ccc;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
   
-  img {
+  .image-container img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
+    object-fit: cover;
   }
   
   .image-container:hover {

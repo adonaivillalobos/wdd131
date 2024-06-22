@@ -21,7 +21,7 @@ body {
   }
   
   figure {
-    width: 30%; /* adjust the width to fit 3 images per row */
+    width: 40%; /* adjust the width to fit 3 images per row */
     margin: 10px; /* add some margin for spacing */
     border: 1px solid black;
     overflow: hidden;

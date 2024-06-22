@@ -34,13 +34,16 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
+  }
+  
+  .gallery-row {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
   }
   
   figure {
-    margin: 10px;
+    margin: 0 10px;
     width: calc(33.33% - 20px);
   }
   

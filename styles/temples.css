@@ -22,6 +22,7 @@
     padding: 20px;
     background-color: lightcyan;
     color: black;
+    margin-bottom: 30px; /* added margin to separate header from nav */
   }
   
   h1 {

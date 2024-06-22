@@ -16,100 +16,51 @@
   /* Header Styles */
   
   header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: #333;
+    color: #fff;
     padding: 20px;
-    background-color: lightcyan;
-    color: black;
-    margin-bottom: 30px; /* added margin to separate header from nav */
+    text-align: center;
   }
   
-  h1 {
+  header h1 {
     margin: 0;
-    font-size: 36px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  /* Navigation Styles */
-  
-  nav {
-    margin: 0;
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center; /* added to center the nav links */
-  }
-  
-  nav li {
-    margin-right: 60px; /* increased margin to add more separation */
-  }
-  
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-size: 18px; /* increased font size */
-    transition: color 0.2s ease; /* added transition for hover effect */
-  }
-  
-  nav a:hover {
-    color: #666;
   }
   
   /* Main Content Styles */
   
   main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 800px;
+    margin: 40px auto;
     padding: 20px;
-    margin-top: 40px; /* added margin to separate nav from main content */
-  }
-  
-  /* Image Styles */
-  
-  .image-container {
-    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   
-  .image {
+  figure {
+    grid-column: span 1;
+    margin: 0;
+  }
+  
+  figcaption {
+    font-size: 18px;
+    color: #666;
+    padding: 10px;
+  }
+  
+  img {
     width: 100%;
     height: 200px;
-    object-fit: cover; /* added to maintain aspect ratio */
+    object-fit: cover;
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  /* Footer Styles */
+  /* Mobile View Styles */
   
-  footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-  }
-  
-  footer p {
-    margin: 0;
-  }
-  
-  /* Utility Styles */
-  
-  .container {
-    max-width: 1200px;
-    margin: 40px auto;
-    padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  @media only screen and (max-width: 768px) {
+    main {
+      grid-template-columns: 1fr;
+    }
   }

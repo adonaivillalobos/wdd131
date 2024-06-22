@@ -74,16 +74,16 @@
   /* Image Styles */
   
   .image-container {
-    margin-top: 40px; /* added margin to separate main content from images */
+    margin-top: 40px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
   }
   
   .image {
-    width: 100%; /* changed from fixed width to 100% */
+    width: 100%;
     height: 200px;
-    margin: 0; /* removed margin */
+    object-fit: cover; /* added to maintain aspect ratio */
     border: 1px solid #ddd;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);

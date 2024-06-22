@@ -14,7 +14,10 @@
     color: lightblue;
     background-color: white;
   }
-  
+  h2 {
+    text-align: center;
+    color: black;
+  }
   /* Header Styles */
   
   header {

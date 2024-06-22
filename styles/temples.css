@@ -46,12 +46,13 @@
   }
   
   nav li {
-    margin-right: 40px; /* increased margin to add more separation */
+    margin-right: 60px; /* increased margin to add more separation */
   }
   
   nav a {
     text-decoration: none;
     color: #333;
+    font-size: 18px; /* increased font size */
     transition: color 0.2s ease; /* added transition for hover effect */
   }
   

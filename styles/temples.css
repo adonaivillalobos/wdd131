@@ -52,12 +52,12 @@ body {
   nav a {
     margin: 0 10px;
     text-decoration: none;
-    color: #fff;
+    color: black;
   }
   
   footer {
-    background-color: #acc2f4;
-    color: #fff;
+    background-color: lightcyan;
+    color: black;
     padding: 10px;
     text-align: center;
     clear: both;

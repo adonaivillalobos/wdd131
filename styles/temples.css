@@ -28,8 +28,8 @@ body {
   }
   
   figure img {
-    width: 200px; /* set a fixed width */
-    height: 150px; /* set a fixed height */
+    width: 100%; /* set a fixed width */
+    height: 100%; /* set a fixed height */
     object-fit: contain; /* ensure the image is scaled to fit the container */
   }
   

@@ -34,13 +34,14 @@
     max-width: 800px;
     margin: 40px auto;
     padding: 20px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   
   figure {
-    margin: 0;
+    margin: 10px;
+    width: calc(33.33% - 20px);
   }
   
   figure img {
@@ -71,7 +72,13 @@
   /* Mobile View Styles */
   
   @media only screen and (max-width: 768px) {
-    main {
-      grid-template-columns: 1fr;
+    figure {
+      width: calc(50% - 20px);
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    figure {
+      width: 100%;
     }
   }

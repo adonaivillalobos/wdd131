@@ -5,7 +5,9 @@ body {
     margin: 0;
     padding: 0;
   }
-  
+header {
+    display: grid;
+  }
   h1 {
     text-align: left;
     color: black;
@@ -48,7 +50,7 @@ body {
     color: black;
   }
   
-  nav a, li {
+  nav a {
     margin: 0 10px;
     text-decoration: none;
     color: black;

@@ -68,6 +68,21 @@
     clear: both;
   }
   
+
+  /*JavaScrip */
+
+  .hamburger {
+    display: none; /* Hide the hamburger button on larger screens */
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
   /* Mobile View Styles */
   
   @media only screen and (max-width: 768px) {

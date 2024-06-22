@@ -5,14 +5,6 @@ body {
     margin: 0;
     padding: 0;
   }
-header {
-    display: flex;
-    justify-content: right;
-    align-items: right;
-    padding: 20px;
-    background-color: lightcyan;
-    color: black;
-  }
   h1 {
     text-align: left;
     margin-left: 20px;

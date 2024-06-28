@@ -11,12 +11,17 @@
     <script defer src="scripts/place.js"></script>
 </head>
 <body>
+    <header>
+        <h1>Maracaibo, Venezuela</h1>
+    </header>
     <div class="container">
         <!-- Title at the top -->
         <h1 class="place-title">Maracaibo, Venezuela</h1>
 
         <!-- Image directly below title -->
-        <img class="place-image" src="images/turpial_ve.webp" alt="Scenic view of Maracaibo">
+        <img class="place-image" src="images/turpial_ve_medium.webp"
+             srcset="images/turpial_ve_small.webp 320w, images/turpial_ve_medium.webp 640w, images/turpial_ve_large.webp 1024w"
+             alt="Scenic view of Maracaibo" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw">
 
         <!-- Data section -->
         <div class="data">

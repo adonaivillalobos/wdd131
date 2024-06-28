@@ -6,18 +6,17 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column; /* Column layout for proper flow */
     align-items: center;
-    justify-content: center;
-    height: 100vh; /* Full viewport height */
-    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
+    min-height: 100vh; /* Ensure the body covers full viewport height */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Container Styles */
 .container {
     display: flex;
-    flex-direction: column; /* Changed to column for better control over child elements */
-    justify-content: center; /* Center children vertically */
-    align-items: center; /* Center children horizontally */
+    flex-direction: column; /* Column layout for the container */
+    align-items: center; /* Center align the content */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -27,11 +26,11 @@ body {
 
 /* Title Styles */
 .place-title {
-    font-size: 2rem;
+    font-size: 2.5rem; /* Increased font size for better emphasis */
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
-    color: #0056b3; /* Add a specific color to the title for better visual appeal */
+    color: #0056b3; /* Specific color for the title */
 }
 
 /* Image Container Styles */
@@ -44,7 +43,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 20px; /* Added margin for spacing */
+    margin-bottom: 20px; /* Margin to separate from content below */
 }
 
 /* Data and Weather Section Styles */
@@ -54,12 +53,12 @@ body {
     align-items: center; /* Center content horizontally */
     justify-content: center; /* Center content vertically */
     width: 45%;
-    margin: 20px 2.5%; /* Equal margin on both sides for better alignment */
+    margin: 20px 2.5%; /* Equal margin for better alignment */
     text-align: center;
-    background: #ffffff; /* Add a background color for better readability */
+    background: #ffffff; /* Background color for sections */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
 }
 
 h2 {
@@ -96,11 +95,11 @@ footer {
     text-align: center;
     padding: 20px;
     background: #f1f1f1; /* Light background for the footer */
-    border-top: 1px solid #ccc; /* Subtle top border for separation */
-    margin-top: auto; /* Pushes footer to the bottom if there's space */
+    border-top: 1px solid #ccc; /* Subtle top border */
+    margin-top: auto; /* Pushes footer to the bottom */
     font-size: 0.9rem;
     color: #666; /* Grey color for footer text */
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow above the footer */
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow above footer */
 }
 
 footer p {
@@ -111,6 +110,11 @@ footer p {
 @media (max-width: 768px) {
     .data, .weather {
         width: 100%;
-        margin: 10px 0; /* Reduced margin for better fit on small screens */
+        margin: 10px 0; /* Reduced margin */
+    }
+
+    .image-container {
+        height: 200px; /* Reduced height for smaller screens */
     }
 }
+

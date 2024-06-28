@@ -6,15 +6,22 @@
     <title>Maracaibo, Venezuela</title>
     <meta name="author" content="Adonai Villalobos">
     <meta name="description"
-        content="This page will describe the weather on Maracaibo, Venezuela. This will be helpful to those who want to visit it one day.">
+        content="This page will describe the weather in Maracaibo, Venezuela. This will be helpful to those who want to visit it one day.">
     <link href="styles/place.css" rel="stylesheet">
     <script defer src="scripts/place.js"></script>
 </head>
 <body>
     <div class="container">
-        <div class="place-title">Maracaibo, Venezuela</div>
-        <div class="image-container" style="background-image: url(images/turpial_ve.webp);"></div>
-        <div class="data">
+        <header class="place-header">
+            <h1 class="place-title">Maracaibo, Venezuela</h1>
+        </header>
+
+        <section class="image-section">
+            <div class="image-container" role="img" aria-label="Scenic view of Maracaibo"
+                style="background-image: url(images/turpial_ve.webp);"></div>
+        </section>
+
+        <section class="data">
             <h2>Data</h2>
             <ul id="data-list">
                 <li>Area: 557 km²</li>
@@ -26,8 +33,9 @@
                 <li>Calling Zone: +58</li>
                 <li>Internet TLD: .ve</li>
             </ul>
-        </div>
-        <div class="weather">
+        </section>
+
+        <section class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
                 <img id="weather-icon" src="images/weather-icon.png" alt="Weather Icon">
@@ -37,7 +45,8 @@
                     <li>Wind: 5kph</li>
                 </ul>
             </div>
-        </div>
+        </section>
+
         <footer>
             <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
             <p id="lastModified"></p>

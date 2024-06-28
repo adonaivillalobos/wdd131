@@ -6,22 +6,20 @@
     <title>Maracaibo, Venezuela</title>
     <meta name="author" content="Adonai Villalobos">
     <meta name="description"
-        content="This page will describe the weather in Maracaibo, Venezuela. This will be helpful to those who want to visit it one day.">
+        content="This page describes the weather in Maracaibo, Venezuela. Useful for those planning to visit.">
     <link href="styles/place.css" rel="stylesheet">
     <script defer src="scripts/place.js"></script>
 </head>
 <body>
     <div class="container">
-        <header class="place-header">
-            <h1 class="place-title">Maracaibo, Venezuela</h1>
-        </header>
+        <!-- Title at the top -->
+        <h1 class="place-title">Maracaibo, Venezuela</h1>
 
-        <section class="image-section">
-            <div class="image-container" role="img" aria-label="Scenic view of Maracaibo"
-                style="background-image: url(images/turpial_ve.webp);"></div>
-        </section>
+        <!-- Image directly below title -->
+        <img class="place-image" src="images/turpial_ve.webp" alt="Scenic view of Maracaibo">
 
-        <section class="data">
+        <!-- Data section -->
+        <div class="data">
             <h2>Data</h2>
             <ul id="data-list">
                 <li>Area: 557 km²</li>
@@ -33,9 +31,10 @@
                 <li>Calling Zone: +58</li>
                 <li>Internet TLD: .ve</li>
             </ul>
-        </section>
+        </div>
 
-        <section class="weather">
+        <!-- Weather section -->
+        <div class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
                 <img id="weather-icon" src="images/weather-icon.png" alt="Weather Icon">
@@ -45,8 +44,9 @@
                     <li>Wind: 5kph</li>
                 </ul>
             </div>
-        </section>
+        </div>
 
+        <!-- Footer at the bottom -->
         <footer>
             <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
             <p id="lastModified"></p>
@@ -56,3 +56,4 @@
     <script src="scripts/place.js"></script>
 </body>
 </html>
+

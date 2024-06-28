@@ -4,55 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maracaibo, Venezuela</title>
-    <meta name="author" content="Adonai Villalobos">
-    <meta name="description"
-        content="This page describes the weather in Maracaibo, Venezuela. Useful for those planning to visit.">
-    <link href="styles/place.css" rel="stylesheet">
-    <script defer src="scripts/place.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <!-- Title at the top -->
-        <h1 class="place-title">Maracaibo, Venezuela</h1>
-
-        <!-- Image directly below title -->
-        <img class="place-image" src="images/turpial_ve.webp" alt="Scenic view of Maracaibo">
-
-        <!-- Data section -->
-        <div class="data">
-            <h2>Data</h2>
-            <ul id="data-list">
-                <li>Area: 557 km²</li>
-                <li>Population: 1,658,000</li>
-                <li>Capital: Maracaibo</li>
-                <li>Language: Spanish</li>
-                <li>Currency: Venezuelan bolívar (VES)</li>
-                <li>Time Zone: VET (UTC-4)</li>
-                <li>Calling Zone: +58</li>
-                <li>Internet TLD: .ve</li>
-            </ul>
-        </div>
-
-        <!-- Weather section -->
-        <div class="weather">
+    <header>
+        <h1>Maracaibo, Venezuela</h1>
+    </header>
+    <main>
+        <section class="about">
+            <h2>About Maracaibo</h2>
+            <p>Maracaibo is a city located in northwestern Venezuela.</p>
+        </section>
+        <section class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
                 <img id="weather-icon" src="images/weather-icon.png" alt="Weather Icon">
                 <ul id="weather-list">
-                    <li>Temperature: 31°C or 88°F</li>
-                    <li>Conditions: Partly Cloudy</li>
-                    <li>Wind: 5kph</li>
+                    <li id="temperature">Temperature: </li>
+                    <li id="conditions">Conditions: </li>
+                    <li id="wind">Wind: </li>
+                    <li id="windchill">Windchill: </li>
                 </ul>
             </div>
-        </div>
-
-        <!-- Footer at the bottom -->
-        <footer>
-            <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
-            <p id="lastModified"></p>
-        </footer>
-    </div>
-
-    <script src="scripts/place.js"></script>
+        </section>
+        <section class="footer">
+            <p>&copy; <span id="currentyear"></span> Maracaibo, Venezuela</p>
+            <p>Last modified: <span id="lastModified"></span></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>

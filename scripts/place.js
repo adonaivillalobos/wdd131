@@ -6,12 +6,18 @@ document.addEventListener('DOMContentLoaded', () => {
     lastModified.textContent = document.lastModified;
   
     // Define static values for temperature and wind speed
-    const temperature = 25; // in °C
-    const windSpeed = 15; // in km/h
+    const temperature = 5; // in °C
+    const windSpeed = 10; // in km/h
   
-    // Calculate and display windchill factor
+    // Select the element where we'll display the windchill factor
     const windChillElement = document.getElementById('windchill');
-    windChillElement.textContent = `Windchill: ${calculateWindChill(temperature, windSpeed)} °C`;
+  
+    // Check if conditions are met for viable wind chill calculation
+    if (temperature <= 10 && windSpeed > 4.8) {
+      windChillElement.textContent = `Windchill: ${calculateWindChill(temperature, windSpeed)} °C`;
+    } else {
+      windChillElement.textContent = 'N/A';
+    }
   
     // Function to calculate windchill factor
     function calculateWindChill(temp, wind) {

@@ -6,66 +6,57 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    flex-direction: column; /* Column layout for proper flow */
+    flex-direction: column;
     align-items: center;
-    min-height: 100vh; /* Ensure the body covers full viewport height */
-    box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
 
 /* Container Styles */
 .container {
-    display: flex;
-    flex-direction: column; /* Column layout for the container */
-    align-items: center; /* Center align the content */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /* Title Styles */
 .place-title {
-    font-size: 2.5rem; /* Increased font size for better emphasis */
+    font-size: 2.5rem;
     text-align: center;
-    width: 100%;
     margin-bottom: 20px;
-    color: #0056b3; /* Specific color for the title */
+    color: #0056b3;
 }
 
-/* Image Container Styles */
-.image-container {
-    width: 100%; /* Container takes the full width of the parent */
-    height: 300px; /* Fixed height for the image container */
-    overflow: hidden; /* Hides any content that overflows the container */
-    border-radius: 10px; /* Rounded corners for the container */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
-    background-position: center; /* Centers the background image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    background-size: cover; /* Scales the image to cover the entire container */
-    margin-bottom: 20px; /* Adds spacing below the container */
+/* Image Styles */
+.place-image {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+    object-fit: cover;
 }
-
 
 /* Data and Weather Section Styles */
 .data, .weather {
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Center content horizontally */
-    justify-content: center; /* Center content vertically */
-    width: 45%;
-    margin: 20px 2.5%; /* Equal margin for better alignment */
-    text-align: center;
-    background: #ffffff; /* Background color for sections */
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 20px;
     padding: 20px;
+    text-align: center;
+    background: #ffffff;
     border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #00796b; /* Specific color for headings */
+    color: #00796b;
 }
 
 ul {
@@ -80,9 +71,9 @@ li {
 /* Weather Info Styles */
 .weather-info {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    margin-top: 10px;
+    gap: 10px;
 }
 
 .weather-info img {
@@ -95,27 +86,16 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background: #f1f1f1; /* Light background for the footer */
-    border-top: 1px solid #ccc; /* Subtle top border */
-    margin-top: auto; /* Pushes footer to the bottom */
+    background: #f1f1f1;
+    border-top: 1px solid #ccc;
     font-size: 0.9rem;
-    color: #666; /* Grey color for footer text */
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow above footer */
-}
-
-footer p {
-    margin: 5px 0;
+    color: #666;
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .data, .weather {
-        width: 100%;
-        margin: 10px 0; /* Reduced margin */
-    }
-
-    .image-container {
-        height: 200px; /* Reduced height for smaller screens */
+        width: 90%;
     }
 }
-

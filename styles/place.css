@@ -1,26 +1,40 @@
+/* General Body Styles */
 body {
     font-family: Arial, sans-serif;
     color: #333;
     background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    box-sizing: border-box; /* Ensures padding is included in the element's total width and height */
 }
 
+/* Container Styles */
 .container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column; /* Changed to column for better control over child elements */
+    justify-content: center; /* Center children vertically */
+    align-items: center; /* Center children horizontally */
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    box-sizing: border-box;
 }
 
+/* Title Styles */
 .place-title {
     font-size: 2rem;
     text-align: center;
+    width: 100%;
     margin-bottom: 20px;
+    color: #0056b3; /* Add a specific color to the title for better visual appeal */
 }
 
+/* Image Container Styles */
 .image-container {
     width: 100%;
     height: 300px;
@@ -30,20 +44,28 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 20px; /* Added margin for spacing */
 }
 
+/* Data and Weather Section Styles */
 .data, .weather {
-    width: 45%;
-    margin-top: 20px;
-    text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 45%;
+    margin: 20px 2.5%; /* Equal margin on both sides for better alignment */
+    text-align: center;
+    background: #ffffff; /* Add a background color for better readability */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
 }
 
 h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
+    color: #00796b; /* Specific color for headings */
 }
 
 ul {
@@ -55,6 +77,7 @@ li {
     margin-bottom: 5px;
 }
 
+/* Weather Info Styles */
 .weather-info {
     display: flex;
     align-items: center;
@@ -67,8 +90,27 @@ li {
     height: 50px;
 }
 
+/* Footer Styles */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background: #f1f1f1; /* Light background for the footer */
+    border-top: 1px solid #ccc; /* Subtle top border for separation */
+    margin-top: auto; /* Pushes footer to the bottom if there's space */
+    font-size: 0.9rem;
+    color: #666; /* Grey color for footer text */
+    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow above the footer */
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     .data, .weather {
         width: 100%;
+        margin: 10px 0; /* Reduced margin for better fit on small screens */
     }
 }

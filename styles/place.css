@@ -33,8 +33,9 @@ body {
 /* Image Styles */
 .place-image {
     width: 100%;
+    max-width: 800px; /* Set a maximum width to prevent it from getting too wide */
     height: auto;
-    max-height: 400px;
+    max-height: 600px; /* Set a maximum height to make it taller */
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     margin-bottom: 20px;

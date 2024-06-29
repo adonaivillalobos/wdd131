@@ -1,111 +1,116 @@
-/* General Body Styles */
-body {
-    font-family: 'Roboto', Arial, sans-serif;
-    color: black;
-    background-color: white;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Container Styles */
-.container {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-/* Title Styles */
-.place-title {
-    font-size: 2.5rem;
-    text-align: center;
-    margin-bottom: 20px;
-    color: black;
-    position: relative;
-}
-
-.place-title::after {
-    content: url('images/turpial_small.webb.jpg'); /* Ensure you have this image in your project */
-    display: inline-block;
-    width: 24px; /* Adjust the size accordingly */
-    height: 24px;
-    margin-left: 10px;
-    vertical-align: middle; /* Align it vertically centered */
-}
-
-/* Image Styles */
-.place-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    margin-bottom: 20px;
-    object-fit: cover;
-}
-
-/* Data and Weather Section Styles */
-.data, .weather {
-    width: 100%;
-    max-width: 500px;
-    margin-bottom: 20px;
-    padding: 20px;
-    text-align: center;
-    background: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #00796b;
-}
-
-ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-li {
-    margin-bottom: 5px;
-}
-
-/* Weather Info Styles */
-.weather-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-}
-
-.weather-icon {
-    width: 50px;
-    height: 50px;
-}
-
-/* Footer Styles */
-footer {
-    width: 100%;
-    text-align: center;
-    padding: 20px;
-    background: white;
-    border-top: 1px solid #ccc;
-    font-size: 0.9rem;
-    color: black;
-    box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    .data, .weather {
-        width: 90%;
-    }
-}
+:root {
+    --primary-color: #3498db; /* global variable 1: primary color */
+    --font-size-base: 16px; /* global variable 2: base font size */
+  }
+  
+  /* General Body Styles */
+  body {
+      font-family: 'Roboto', Arial, sans-serif;
+      color: black;
+      background-color: white;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  /* Container Styles */
+  .container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  
+  /* Title Styles */
+  .place-title {
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 20px;
+      color: black;
+      position: relative;
+  }
+  
+  .place-title::after {
+      content: url('images/turpial_small.webb.jpg'); /* Ensure you have this image in your project */
+      display: inline-block;
+      width: 24px; /* Adjust the size accordingly */
+      height: 24px;
+      margin-left: 10px;
+      vertical-align: middle; /* Align it vertically centered */
+  }
+  
+  /* Image Styles */
+  .place-image {
+      width: 100%;
+      max-width: 800px;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      margin-bottom: 20px;
+      object-fit: cover;
+  }
+  
+  /* Data and Weather Section Styles */
+  .data,.weather {
+      width: 100%;
+      max-width: 500px;
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: center;
+      background: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: #00796b;
+  }
+  
+  ul {
+      list-style-type: none;
+      padding: 0;
+  }
+  
+  li {
+      margin-bottom: 5px;
+  }
+  
+  /* Weather Info Styles */
+  .weather-info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+  }
+  
+  .weather-icon {
+      width: 50px;
+      height: 50px;
+  }
+  
+  /* Footer Styles */
+  footer {
+      width: 100%;
+      text-align: center;
+      padding: 20px;
+      background: white;
+      border-top: 1px solid #ccc;
+      font-size: 0.9rem;
+      color: black;
+      box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Query for Smaller Screens */
+  @media (max-width: 768px) {
+     .data,.weather {
+          width: 90%;
+      }
+  }

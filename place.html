@@ -7,7 +7,7 @@
     <meta name="author" content="Adonai Villalobos Riveiro">
     <meta name="description" content="This page describes the weather in Maracaibo, Venezuela. Useful for those planning to visit.">
     <link href="styles/place.css" rel="stylesheet">
-    <script defer src="scripts/place.js"></script>
+    <script src="scripts/place.js" type="text/javascript"></script>
 </head>
 <body>
     <header>
@@ -16,9 +16,9 @@
     <main class="container">
         <!-- Hero Image with WebP format -->
         <picture>
-            <source srcset="images/turpial_medium.webp 640w, images/turpial_large.webp 1024w" type="image/webp">
-            <source srcset="images/turpial_small.jpg 320w, images/turpial_medium.jpg 640w, images/turpial_large.jpg 1024w" type="image/jpeg">
-            <img class="place-image" src="images/turpial_medium.webb.jpg" alt="Turpial" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw">
+            <source srcset="images/turpial_small.webp, images/turpial_medium.webp 640w, images/turpial_large.webp 1024w" type="image/webp" alt="Turpial">
+            <source srcset="images/turpial_small.jpg 320w, images/turpial_medium.jpg 640w, images/turpial_large.jpg 1024w" type="image/jpeg" alt="Turpial">
+            <img class="place-image" src="images/turpial_medium.webp" alt="Turpial">
         </picture>
 
         <!-- Data section -->
@@ -32,7 +32,7 @@
                 <li>Currency: Venezuelan bolívar (VES)</li>
                 <li>Time Zone: VET (UTC-4)</li>
                 <li>Calling Zone: +58</li>
-                <li>Internet TLD: .ve</li>
+                <li>Internet TLD:.ve</li>
             </ul>
         </div>
 
@@ -40,7 +40,7 @@
         <div class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
-                <img src="images/weather_icon.png" class="weather-icon" alt="Weather Icon">
+                <img src="images/weather_icon.svg" class="weather-icon" alt="Weather Icon">
                 <ul id="weather-list">
                     <li>Temperature: 31°C or 88°F</li>
                     <li>Conditions: Partly Cloudy</li>

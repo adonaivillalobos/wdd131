@@ -8,7 +8,6 @@
     <meta name="description" content="This page describes the weather in Maracaibo, Venezuela. Useful for those planning to visit.">
     <link href="styles/place.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <script defer src="scripts/place.js"></script>
 </head>
 <body>
     <header>
@@ -17,9 +16,9 @@
     <main class="container">
         <!-- Hero Image with WebP format -->
         <picture>
-            <source srcset="images/turpial_medium.webp 640w, images/turpial_large.webp 1024w" type="image/webp">
+            <source srcset="images/turpial_small.webp 320w, images/turpial_medium.webp 640w, images/turpial_large.webp 1024w" type="image/webp">
             <source srcset="images/turpial_small.jpg 320w, images/turpial_medium.jpg 640w, images/turpial_large.jpg 1024w" type="image/jpeg">
-            <img class="place-image" src="images/turpial_medium.webb.jpg" alt="Turpial" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw">
+            <img class="place-image" src="images/turpial_medium.webp" alt="Turpial" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw">
         </picture>
 
         <!-- Data section -->
@@ -33,7 +32,7 @@
                 <li>Currency: Venezuelan bolívar (VES)</li>
                 <li>Time Zone: VET (UTC-4)</li>
                 <li>Calling Zone: +58</li>
-                <li>Internet TLD: .ve</li>
+                <li>Internet TLD:.ve</li>
             </ul>
         </div>
 
@@ -57,5 +56,6 @@
         <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
         <p id="lastModified"></p>
     </footer>
+    <script defer src="scripts/place.js"></script>
 </body>
 </html>

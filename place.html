@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maracaibo, Venezuela</title>
+    <title>Maracaibo, Venezuela Weather</title>
     <meta name="author" content="Adonai Villalobos Riveiro">
     <meta name="description" content="This page describes the weather in Maracaibo, Venezuela. Useful for those planning to visit.">
     <link href="styles/place.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script type="text/javascript" defer src="scripts/place.js"></script>
 </head>
 <body>
     <header>
         <h1 class="place-title">Maracaibo, Venezuela Weather</h1>
     </header>
-    <div class="container">
+    <main class="container">
         <!-- Hero Image with WebP format -->
         <picture>
             <source srcset="images/turpial_medium.webp 640w, images/turpial_large.webp 1024w" type="image/webp">
@@ -40,21 +41,21 @@
         <div class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
-                <div class="weather-icon"></div> <!-- Placeholder for SVG weather icon -->
+                <img src="images/weather_icon.svg" class="weather-icon" alt="Weather Icon">
                 <ul id="weather-list">
                     <li>Temperature: 31°C or 88°F</li>
                     <li>Conditions: Partly Cloudy</li>
                     <li>Wind: 5kph</li>
-                    <li>Windchill: <span id="windchill">N/A</span></li> <!-- Display windchill here -->
+                    <li>Windchill: <span id="windchill">N/A</span></li>
                 </ul>
             </div>
         </div>
+    </main>
 
-        <!-- Footer at the bottom -->
-        <footer>
-            <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
-            <p id="lastModified"></p>
-        </footer>
-    </div>
+    <!-- Footer at the bottom -->
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Adonai Villalobos Riveiro | Berlin, Germany.</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>

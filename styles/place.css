@@ -1,8 +1,18 @@
+/* CSS Variables */
+:root {
+    --main-font: 'Arial, sans-serif';
+    --main-bg-color: lightskyblue;
+    --main-text-color: black;
+    --secondary-bg-color: white;
+    --highlight-color: #00796b;
+    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
 /* General Body Styles */
 body {
-    font-family: Arial, sans-serif;
-    color: black;
-    background-color: lightskyblue;
+    font-family: var(--main-font);
+    color: var(--main-text-color);
+    background-color: var(--main-bg-color);
     margin: 0;
     padding: 0;
     display: flex;
@@ -27,17 +37,17 @@ body {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 20px;
-    color: black;
+    color: var(--main-text-color);
 }
 
 /* Image Styles */
 .place-image {
     width: 100%;
-    max-width: 800px; /* Set a maximum width to prevent it from getting too wide */
+    max-width: 800px;
     height: auto;
-    max-height: 600px; /* Set a maximum height to make it taller */
+    max-height: 600px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: var(--box-shadow);
     margin-bottom: 20px;
     object-fit: cover;
 }
@@ -49,7 +59,7 @@ body {
     margin-bottom: 20px;
     padding: 20px;
     text-align: center;
-    background: #ffffff;
+    background: var(--secondary-bg-color);
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -57,7 +67,7 @@ body {
 h2 {
     font-size: 1.5rem;
     margin-bottom: 10px;
-    color: #00796b;
+    color: var(--highlight-color);
 }
 
 ul {
@@ -77,9 +87,10 @@ li {
     gap: 10px;
 }
 
-.weather-info img {
+.weather-icon {
     width: 50px;
     height: 50px;
+    background: url('images/weather_icon.svg') no-repeat center/contain;
 }
 
 /* Footer Styles */
@@ -87,10 +98,10 @@ footer {
     width: 100%;
     text-align: center;
     padding: 20px;
-    background: white;
+    background: var(--secondary-bg-color);
     border-top: 1px solid #ccc;
     font-size: 0.9rem;
-    color: black;
+    color: var(--main-text-color);
     box-shadow: 0 -1px 4px rgba(0, 0, 0, 0.1);
 }
 

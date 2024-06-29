@@ -1,13 +1,13 @@
 :root {
-    --primary-color: #3498db; /* global variable 1: primary color */
-    --font-size-base: 16px; /* global variable 2: base font size */
+    --primary-color: #3498db;
+    --font-size-base: 16px;
   }
   
   /* General Body Styles */
   body {
       font-family: 'Roboto', Arial, sans-serif;
       color: black;
-      background-color: white;
+      background-color: lightblue;
       margin: 0;
       padding: 0;
       display: flex;
@@ -37,12 +37,12 @@
   }
   
   .place-title::after {
-      content: url('images/turpial_small.webb.jpg'); /* Ensure you have this image in your project */
+      content: url('images/turpial_medium.webp'); 
       display: inline-block;
-      width: 24px; /* Adjust the size accordingly */
+      width: 24px;
       height: 24px;
       margin-left: 10px;
-      vertical-align: middle; /* Align it vertically centered */
+      vertical-align: middle;
   }
   
   /* Image Styles */

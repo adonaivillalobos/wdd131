@@ -28,6 +28,16 @@ body {
     text-align: center;
     margin-bottom: 20px;
     color: black;
+    position: relative;
+}
+
+.place-title::after {
+    content: url('images/decorative-icon.svg'); /* Ensure you have this image in your project */
+    display: inline-block;
+    width: 24px; /* Adjust the size accordingly */
+    height: 24px;
+    margin-left: 10px;
+    vertical-align: middle; /* Align it vertically centered */
 }
 
 /* Image Styles */

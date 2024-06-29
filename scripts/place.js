@@ -1,26 +1,26 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const currentYear = document.getElementById('currentyear');
-    currentYear.textContent = new Date().getFullYear();
-  
-    const lastModified = document.getElementById('lastModified');
-    lastModified.textContent = document.lastModified;
-  
-    // Define static values for temperature and wind speed
-    const temperature = 5; // in °C
-    const windSpeed = 10; // in km/h
-  
-    // Select the element where we'll display the windchill factor
-    const windChillElement = document.getElementById('windchill');
-  
-    // Check if conditions are met for viable wind chill calculation
-    if (temperature <= 10 && windSpeed > 4.8) {
-      windChillElement.textContent = `Windchill: ${calculateWindChill(temperature, windSpeed)} °C`;
-    } else {
-      windChillElement.textContent = 'N/A';
-    }
-  
-    // Function to calculate windchill factor
-    function calculateWindChill(temp, wind) {
-      return 13.12 + 0.6215 * temp - 11.37 * Math.pow(wind, 0.16) + 0.3965 * temp * Math.pow(wind, 0.16);
-    }
-  });
+document.addEventListener("DOMContentLoaded", function() {
+  // Set current year in footer
+  document.getElementById('currentyear').textContent = new Date().getFullYear();
+
+  // Set last modified date in footer
+  const lastModified = new Date(document.lastModified);
+  document.getElementById('lastModified').textContent = `Last Updated: ${lastModified.toLocaleDateString()}`;
+
+  // Windchill calculation function
+  function calculateWindChill(temperature, windSpeed) {
+      if (temperature > 10 || windSpeed <= 4.8) {
+          return "N/A";
+      }
+
+      // Using Celsius for example
+      // Formula: Wind Chill = 13.12 + 0.6215T - 11.37V^0.16 + 0.3965TV^0.16
+      const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
+      return `${windChill.toFixed(1)} °C`;
+  }
+
+  // Set windchill factor
+  const temperature = 31; // Example temperature in Celsius
+  const windSpeed = 5; // Example wind speed in kph
+
+  document.getElementById('windchill').textContent = calculateWindChill(temperature, windSpeed);
+});

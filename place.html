@@ -11,13 +11,15 @@
 </head>
 <body>
     <header>
-        <h1>Maracaibo, Venezuela Weather</h1>
+        <h1 class="place-title">Maracaibo, Venezuela Weather</h1>
     </header>
     <div class="container">
-        <!-- Image directly below title -->
-        <img class="place-image" src="images/turpial_medium.jpg"
-             srcset="images/turpial_small.jpg 320w, images/turpial_medium.jpg 640w, images/turpial_large.jpg 1024w"
-             alt="Turpial" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw" />
+        <!-- Hero Image with WebP format -->
+        <picture>
+            <source srcset="images/turpial_medium.webp 640w, images/turpial_large.webp 1024w" type="image/webp">
+            <source srcset="images/turpial_small.jpg 320w, images/turpial_medium.jpg 640w, images/turpial_large.jpg 1024w" type="image/jpeg">
+            <img class="place-image" src="images/turpial_medium.jpg" alt="Turpial" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw">
+        </picture>
 
         <!-- Data section -->
         <div class="data">
@@ -30,7 +32,7 @@
                 <li>Currency: Venezuelan bolívar (VES)</li>
                 <li>Time Zone: VET (UTC-4)</li>
                 <li>Calling Zone: +58</li>
-                <li>Internet TLD:.ve</li>
+                <li>Internet TLD: .ve</li>
             </ul>
         </div>
 
@@ -38,13 +40,12 @@
         <div class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
-                <img id="weather-icon" src="images/weather_icon.png"
-                     srcset="images/weather_icon.png 20w, images/weather_icon.png 40w, images/weather_icon.png 60w"
-                     alt="Weather Icon">
+                <div class="weather-icon"></div> <!-- Placeholder for SVG weather icon -->
                 <ul id="weather-list">
                     <li>Temperature: 31°C or 88°F</li>
                     <li>Conditions: Partly Cloudy</li>
                     <li>Wind: 5kph</li>
+                    <li>Windchill: <span id="windchill">N/A</span></li> <!-- Display windchill here -->
                 </ul>
             </div>
         </div>

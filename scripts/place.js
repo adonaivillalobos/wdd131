@@ -1,8 +1,8 @@
-document.addEventListener("DOMContentLoaded", function() {
-  // Set current year in footer
-  document.getElementById('currentyear').textContent = new Date().getFullYear();
+// place.js
+document.addEventListener('DOMContentLoaded', function () {
+  const currentYear = new Date().getFullYear();
+  document.getElementById('currentyear').textContent = currentYear;
 
-  // Set last modified date in footer
   const lastModified = new Date(document.lastModified);
   document.getElementById('lastModified').textContent = `Last Updated: ${lastModified.toLocaleDateString()}`;
 
@@ -13,7 +13,6 @@ document.addEventListener("DOMContentLoaded", function() {
       }
 
       // Using Celsius for example
-      // Formula: Wind Chill = 13.12 + 0.6215T - 11.37V^0.16 + 0.3965TV^0.16
       const windChill = 13.12 + 0.6215 * temperature - 11.37 * Math.pow(windSpeed, 0.16) + 0.3965 * temperature * Math.pow(windSpeed, 0.16);
       return `${windChill.toFixed(1)} °C`;
   }

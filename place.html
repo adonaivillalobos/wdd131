@@ -17,7 +17,9 @@
     <div class="container">
         <!-- Image directly below title -->
         <img class="place-image" src="images/turpial_medium.webb.jpg"
-             srcset="images/turpial_small.webb.jpg 320w, images/turpial_medium.webb 640w, images/turpial_large.webb.jpg 1024w"
+             srcset="images/turpial_small.webb.jpg 320w, images/turpial_medium.webb.jpg 640w, images/turpial_large.webb.jpg 1024w,
+                     images/turpial_small.webp 320w, images/turpial_medium.webp 640w, images/turpial_large.webp 1024w,
+                     images/turpial_small.svg 320w, images/turpial_medium.svg 640w, images/turpial_large.svg 1024w"
              alt="Turpial" sizes="(max-width: 480px) 100vw, (max-width: 1024px) 50vw, 100vw" />
 
         <!-- Data section -->
@@ -31,7 +33,7 @@
                 <li>Currency: Venezuelan bolívar (VES)</li>
                 <li>Time Zone: VET (UTC-4)</li>
                 <li>Calling Zone: +58</li>
-                <li>Internet TLD: .ve</li>
+                <li>Internet TLD:.ve</li>
             </ul>
         </div>
 
@@ -39,7 +41,11 @@
         <div class="weather">
             <h2>Weather</h2>
             <div class="weather-info">
-                <img id="weather-icon" src="images/weather_icon.png" alt="Weather Icon">
+                <img id="weather-icon" src="images/weather_icon.png"
+                     srcset="images/weather_icon.png 20w, images/weather_icon.png 40w, images/weather_icon.png 60w,
+                             images/weather_icon.webp 20w, images/weather_icon.webp 40w, images/weather_icon.webp 60w,
+                             images/weather_icon.svg 20w, images/weather_icon.svg 40w, images/weather_icon.svg 60w"
+                     alt="Weather Icon">
                 <ul id="weather-list">
                     <li>Temperature: 31°C or 88°F</li>
                     <li>Conditions: Partly Cloudy</li>
@@ -54,7 +60,5 @@
             <p id="lastModified"></p>
         </footer>
     </div>
-
-    <!-- No need to include the script tag again, it's already included in the head section -->
 </body>
 </html>

@@ -103,9 +103,9 @@ const temples = [
 // Function to create temple cards dynamically
 function createTempleCards(filterFunc = null) {
     const main = document.querySelector('main');
-    main.innerHTML = '<h2>Home</h2>'; // Reset the content of the main element
+    main.innerHTML = '<h2>Home</h2>'; // Reset the content of the mainelement
 
-    const filteredTemples = filterFunc ? temples.filter(filterFunc) : temples;
+    const filteredTemples = filterFunc? temples.filter(filterFunc) : temples;
 
     filteredTemples.forEach(temple => {
         const templeCard = document.createElement('figure');
@@ -131,7 +131,7 @@ function filterTemples(criterion) {
             return temple => new Date(temple.dedicated).getFullYear() >= 2000;
         case 'large':
             return temple => temple.area >= 90000;
-        case 'small':
+        case 'all':
             return temple => temple.area < 10000;
         default:
             return null;
@@ -150,24 +150,22 @@ document.querySelector('nav').addEventListener('click', (event) => {
 // Initialize page with all temples
 createTempleCards();
 
-// Get the current year and last modified date
-document.getElementById('currentyear').textContent = new Date().getFullYear();
-document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
+// Remove duplicate code
+// Remove the following code as it is already present at the top of the script
+// document.getElementById('currentyear').textContent = new Date().getFullYear();
+// document.getElementById('lastModified').textContent = `Last modified: ${document.lastModified}`;
 
-// Hamburger menu functionality
-const navMenu = document.querySelector('nav');
-const hamburgerButton = document.querySelector('.hamburger');
+// Remove the following code as it is already present at the top of the script
+// hamburgerButton.addEventListener('click', () => {
+//     navMenu.classList.toggle('open');
+//     hamburgerButton.innerHTML = navMenu.classList.contains('open')? '&#10006;' : '&#9776;';
+// });
 
-hamburgerButton.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-    hamburgerButton.innerHTML = navMenu.classList.contains('open') ? '&#10006;' : '&#9776;';
-});
-
-window.addEventListener('resize', () => {
-    if (window.innerWidth >= 768) {
-        navMenu.classList.remove('open');
-        hamburgerButton.style.display = 'none';
-    } else {
-        hamburgerButton.style.display = 'block';
-    }
-});
+// window.addEventListener('resize', () => {
+//     if (window.innerWidth >= 768) {
+//         navMenu.classList.remove('open');
+//         hamburgerButton.style.display = 'none';
+//     } else {
+//         hamburgerButton.style.display = 'block';
+//     }
+// });

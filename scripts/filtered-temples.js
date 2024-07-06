@@ -600,6 +600,43 @@ function displayTempleInfo(temple) {
   `;
   document.getElementById("temple-info").innerHTML = templeInfo;
 }
+function displayTempleCards(temples) {
+  const templeCardsContainer = document.getElementById("temple-cards-container");
+  templeCardsContainer.innerHTML = "";
+
+  temples.forEach(temple => {
+    const templeCard = document.createElement("div");
+    templeCard.classList.add("temple-card");
+
+    const templeName = document.createElement("h2");
+    templeName.classList.add("temple-name");
+    templeName.textContent = temple.templeName;
+    templeCard.appendChild(templeName);
+
+    const templeLocation = document.createElement("p");
+    templeLocation.classList.add("temple-location");
+    templeLocation.textContent = temple.location;
+    templeCard.appendChild(templeLocation);
+
+    const templeDedicated = document.createElement("p");
+    templeDedicated.classList.add("temple-dedicated");
+    templeDedicated.textContent = temple.dedicated;
+    templeCard.appendChild(templeDedicated);
+
+    const templeArea = document.createElement("p");
+    templeArea.classList.add("temple-area");
+    templeArea.textContent = `${temple.area} square feet`;
+    templeCard.appendChild(templeArea);
+
+    const templeImage = document.createElement("img");
+    templeImage.classList.add("temple-image");
+    templeImage.src = temple.imageUrl;
+    templeImage.alt = temple.templeName;
+    templeCard.appendChild(templeImage);
+
+    templeCardsContainer.appendChild(templeCard);
+  });
+}
 
 // Event listener to display temple information when a temple is selected
 document.getElementById("temple-select").addEventListener("change", function() {

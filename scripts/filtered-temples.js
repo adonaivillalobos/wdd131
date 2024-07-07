@@ -589,28 +589,32 @@ const temples = [
   }
 ];
 
-// Function to display temple information
-function displayTempleInfo(temple) {
-  const templeInfo = `
-    <h2>${temple.templeName}</h2>
-    <p>Location: ${temple.location}</p>
-    <p>Dedicated: ${temple.dedicated}</p>
-    <p>Area: ${temple.area} square feet</p>
-    <img src="${temple.imageUrl}" alt="${temple.templeName}">
+// Populate the temple dropdown
+function populateTempleDropdown() {
+  const templeSelect = document.getElementById('templeSelect');
+  templeSelect.innerHTML = temples.map(temple => `<option value="${temple.templeName}">${temple.templeName}</option>`).join('');
+}
+
+// Display selected temple details
+function displayTempleDetails(temple) {
+  const templeInfo = document.getElementById('temple-info');
+  templeInfo.innerHTML = `
+      <h3>${temple.templeName}</h3>
+      <p>Location: ${temple.location}</p>
+      <p>Dedicated: ${temple.dedicated}</p>
+      <p>Area: ${temple.area} square feet</p>
+      <img src="${temple.imageUrl}" alt="${temple.templeName}">
   `;
-  document.getElementById("temple-info").innerHTML = templeInfo;
 }
 
-// Event listener to display temple information when a temple is selected
-document.getElementById("temple-select").addEventListener("change", function() {
-  const selectedTemple = temples[this.value];
-  displayTempleInfo(selectedTemple);
+// Initial population of the dropdown
+populateTempleDropdown();
+
+// Add event listener to the dropdown
+document.getElementById('templeSelect').addEventListener('change', function() {
+  const selectedTempleName = this.value;
+  const selectedTemple = temples.find(temple => temple.templeName === selectedTempleName);
+  if (selectedTemple) {
+      displayTempleDetails(selectedTemple);
+  }
 });
-
-// Initialize the temple select dropdown
-for (let i = 0; i < temples.length; i++) {
-  const templeOption = document.createElement("option");
-  templeOption.value = i;
-  templeOption.text = temples[i].templeName;
-  document.getElementById("temple-select").appendChild(templeOption);
-}

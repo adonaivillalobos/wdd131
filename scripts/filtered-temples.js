@@ -23,15 +23,7 @@ hamburgerButton.addEventListener('click', () => {
   hamburgerButton.innerHTML = navMenu.classList.contains('open')? '&#10006;' : '&#9776;'; // Toggle between hamburger and X symbols
 });
 
-// Hide the navigation menu on larger screens
-window.addEventListener('resize', () => {
-  if (window.innerWidth >= 768) {
-    navMenu.classList.remove('open');
-    hamburgerButton.style.display = 'none';
-  } else {
-    hamburgerButton.style.display = 'block';
-  }
-});
+
 // Array of temple objects
 const temples = [
     {

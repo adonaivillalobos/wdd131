@@ -606,3 +606,11 @@ document.getElementById("temple-select").addEventListener("change", function() {
   const selectedTemple = temples[this.value];
   displayTempleInfo(selectedTemple);
 });
+
+// Initialize the temple select dropdown
+for (let i = 0; i < temples.length; i++) {
+  const templeOption = document.createElement("option");
+  templeOption.value = i;
+  templeOption.text = temples[i].templeName;
+  document.getElementById("temple-select").appendChild(templeOption);
+}

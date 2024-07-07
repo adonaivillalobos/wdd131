@@ -607,6 +607,13 @@ function displayTempleDetails(temple) {
   `;
 }
 
+function displayTempleImage(temple) {
+  const templeImage = document.createElement('img');
+  templeImage.src = temple.imageUrl;
+  templeImage.alt = temple.templeName;
+  document.getElementById('temple-images').appendChild(templeImage);
+}
+
 // Initial population of the dropdown
 populateTempleDropdown();
 

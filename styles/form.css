@@ -83,3 +83,19 @@ span {
     font-weight: normal;
     color: gray;
 }
+/* Footer styles */
+footer {
+    background-color: #333; /* Dark footer background color */
+    color: white; /* White text color */
+    text-align: center; /* Center-align footer content */
+    padding: 1rem; /* Padding around footer content */
+}
+
+footer p {
+    margin: 0.5rem 0; /* Margin space for paragraphs within footer */
+    font-size: 1rem; /* Ensure readable font size */
+}
+
+footer span {
+    font-weight: bold; /* Highlight the current year */
+}

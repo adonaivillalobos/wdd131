@@ -1,0 +1,332 @@
+/* Resetting default margin and padding */
+h1, h2, h3 {
+    margin: 0;
+    padding: 0;
+    font-family: Merienda, cursive;
+  }
+  body {
+    background-color: whitesmoke;
+  }
+  /* Ensuring the header takes full width */
+  header {
+    width: 100%;
+    background-color: lightgrey; 
+    text-align: center; /* Center align the content inside the header */
+    padding: 0 auto;
+  }
+  /* Styling the logo */
+  .logo img {
+    max-width: 100%; /* Ensure the logo doesn't exceed the container's width */
+  }
+  /* Styling the navigation */
+  nav ul {
+    list-style: none;
+    margin-top: 5px; /* Adjust the space between logo and navigation */
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 20px; /* Adjust the space between navigation items */
+    line-height: 50px; /* Change this value to adjust the vertical alignment */
+    padding: 5px 10px; /* Adjust the padding around each navigation item */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .spacer {
+    height: 50px;
+  }
+  /* Styling the audience section */
+  .audience-section {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px; /* Add space above the audience section */
+    padding-bottom: 20px; /* Add space below the audience section */
+  }
+  .audience-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; /* Center the content */
+  }
+  .audience-image {
+    text-align: left; /* Align image to the left */
+    box-sizing: border-box;
+    padding-right: 80px; /* Add space between image and text */
+  }
+  .audience-image img {
+    max-width: 300px; /* Set maximum width for the image */
+    height: auto;
+    display: block;
+  }
+  .audience-text {
+    box-sizing: border-box;
+    font-family: Noto Sans;
+    font-size: medium;
+  }
+  .audience-title {
+    text-align: center; /* Center the Audience title */
+  }
+  /* Creating space after the audience section */
+  .spacer {
+    height: 50px;
+  }
+  .vision-section {
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding-top: 20px; /* Add space above the vision section */
+    padding-bottom: 20px; /* Add space below the vision section */
+  }
+  .vision-content {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto; /* Center the content */
+  }
+  .vision-image {
+    text-align: left; /* Align image to the left */
+    box-sizing: border-box;
+    padding-right: 80px; /* Add space between image and text */
+  }
+  .vision-image img {
+    max-width: 300px; /* Set maximum width for the image */
+    height: auto;
+    display: block;
+  }
+  .vision-text {
+    box-sizing: border-box;
+    font-family: Noto Sans;
+    font-size: medium;
+  }
+  .vision-title {
+    text-align: center; /* Center the Vision title */
+  }
+  p {
+    font-family: Noto Sans;
+  }
+  .audience-text,
+  .vision-text {
+    font-size: 18px; 
+    line-height: 1.5;
+    justify-content: left;
+  }
+  .title-frame {
+    background-color: #4e87eb; /* Background color for the title frame */
+    padding: 8px; /* Adjust padding around the title */
+    border-radius: 5px; /* Add rounded corners to the frame */
+    display: inline-block; /* Display inline to fit content */
+    margin-bottom: 15px; /* Add margin below the frame */
+    text-align: center; /* Center the text within the frame */
+  }
+  .audience-title,
+  .vision-title {
+    margin: 0; /* Reset margin for titles */
+  }
+  .spacer {
+    height: 50px;
+  }
+  /* CSS for the course section */
+  
+  .courses-section {
+    text-align: center;
+    margin: 20px auto 50px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 18px; /* Increased font size */
+    line-height: 1.6; /* Increased line height for space between lines */
+  }
+  
+  .courses-section h2 {
+    margin-top: 0;
+  }
+  
+  .courses-section .course {
+    margin-bottom: 40px; /* Add space between courses */
+  }
+  
+  .courses-section h3 {
+    margin-bottom: 10px; /* Add space below course titles */
+  }
+  
+  .courses-section p {
+    text-align: justify; /* Justify text */
+  }
+  
+  .courses-section ul {
+    text-align: left; /* Align bullet points to the left */
+  }
+  
+  /* Hover effect for course images */
+  .courses-section .course-image:hover img {
+    opacity: 0.8; /* Reduce opacity of the image on hover */
+    transition: opacity 0.3s ease; /* Add a smooth transition effect */
+  }
+  
+  /*Footer*/
+  footer a {
+    color: white;
+    text-decoration: none;
+  }
+  footer a:hover {
+    color: black;
+  }
+  footer p {
+    font-size: 1.2em;
+  }
+  footer p a:hover {
+    text-decoration: underline;
+  }
+  footer .social img {
+    padding-top: 15px;
+  }
+  footer {
+    background-color: #4e87eb;
+    color: white;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  /* About Me page CSS */
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Align items at the top */
+    padding: 20px;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    margin-right: 20px; /* Added margin to create space between card and introduction */
+  }
+  
+  .introduction {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Styles for introduction title and text */
+  .introduction .about-section {
+    text-align: center;
+    margin-bottom: 20px; /* Added margin to create space between introduction title and text */
+  }
+  
+  .introduction .about-section h2 {
+    font-size: 28px; /* Increased font size for the introduction title */
+    margin-bottom: 15px; /* Added margin between introduction title and text */
+    /* Additional styles for the introduction title */
+  }
+  
+  .introduction .about-section p {
+    text-align: center;
+    line-height: 2; /* Increased line height for more spacing */
+    font-size: 20px; /* Increased font size for the introduction text */
+    font-family: Noto Sans;
+    /* Other paragraph styles for introduction text */
+  }
+  
+  .interest-section ul {
+    text-align: left; /* Align text from the interest section to the left */
+    font-size: 18px; /* Increased font size for the interests */
+    font-family: Noto Sans;
+    line-height: 2; /* Increased line height for more spacing */
+    margin-top: 35px; /* Added margin between introduction text and interest title */
+    /* Other styles for interest list */
+  }
+  
+  /* Retain the existing styles for other elements */
+  .title {
+    color: grey;
+    font-size: 18px;
+  }
+  
+  button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+  }
+  
+  a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+  }
+  
+  button:hover,
+  a:hover {
+    opacity: 0.7;
+  }
+  /* course page CSS start now*/
+  .course-content {
+    max-width: 600px; /* Adjust the maximum width as needed */
+    margin: 0 auto;
+    padding: 20px; /* Adjust padding for content separation */
+  }
+  .course h2 {
+    margin-bottom: 20px; /* Add margin below the h2 element */
+  }
+  .course h3 {
+    text-align: center;
+    background-color: #4b73df;
+    padding: 15px; /* Increase padding for the colored frame */
+    border-radius: 5px; /* Rounded corners for the box */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    margin-bottom: 30px; /* Spacing between course titles */
+    width: calc(100% - 40px); /* Adjust to account for padding */
+    margin-left: -20px; /* Adjust to account for padding */
+  }
+  .course p {
+    text-align: left;
+    margin-left: 30px; /* Indent the text for better readability */
+    line-height: 1.5; /* Add space between lines in paragraphs */
+    font-family: Noto Sans;
+    font-size: medium;
+  }
+  .course ul {
+    text-align: left;
+    margin-left: 30px; /* Indent the text for better readability */
+  }
+  /* Place the navbar at the bottom of the page, and make it stick */
+  .navbar {
+    background-color: #4b73df;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 0.5px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  /* Add a color to the active/current link */
+  .navbar a.active {
+    background-color: #4b73df;
+    color: white;
+  }

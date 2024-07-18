@@ -2,124 +2,108 @@
 h1, h2, h3 {
     margin: 0;
     padding: 0;
-    font-family: Merienda, cursive;
+    font-family: 'Merienda', cursive;
 }
 body {
     background-color: lightgray;
+    font-family: 'Arial, sans-serif'; /* Use a consistent font family */
+    color: #333; /* Match target text color */
+    margin: 0; /* Remove default margin */
+    padding-top: 60px; /* Adjust for fixed header */
 }
 /* Ensuring the header takes full width */
 header {
     width: 100%;
-    background-color: lightgrey; 
-    text-align: center; /* Center align the content inside the header */
-    padding: 0 auto;
+    background-color: #333; /* Match target background color */
+    color: white; /* Match target text color */
+    text-align: center;
+    padding: 20px 0; /* Add padding for spacing */
+    position: fixed;
+    top: 0;
+    z-index: 1000;
 }
 /* Styling the logo */
 .logo img {
-    max-width: 100%; /* Ensure the logo doesn't exceed the container's width */
+    max-width: 150px; /* Adjust logo size */
 }
 /* Styling the navigation */
 nav {
-    background-color: lightgrey; /* Set background color for the navigation */
-    text-align: center; /* Center the navigation */
-    padding: 10px 0; /* Add padding for spacing */
+    background-color: #333; /* Match target background color */
+    padding: 10px 0;
 }
 
 nav ul {
     list-style: none;
-    padding: 0; /* Remove default padding */
-    margin: 0; /* Remove default margin */
-    display: inline-block; /* Align items horizontally and center them */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Use flexbox for alignment */
+    justify-content: center; /* Center the navigation items */
 }
 
 nav ul li {
-    display: inline;
-    margin: 0 20px; /* Adjust the space between navigation items */
-    line-height: 50px; /* Change this value to adjust the vertical alignment */
-    padding: 5px 10px; /* Adjust the padding around each navigation item */
+    margin: 0 15px; /* Adjust spacing between items */
 }
 
 nav ul li a {
     text-decoration: none;
-    color: blue;
+    color: white; /* Match target link color */
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s; /* Add transition for hover effect */
+}
+
+nav ul li a:hover {
+    background-color: #575757; /* Hover effect background */
 }
 
 .spacer {
     height: 50px;
 }
 /* Styling the audience section */
-.audience-section {
-    max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: 20px; /* Add space above the audience section */
-    padding-bottom: 20px; /* Add space below the audience section */
-}
-.audience-content {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto; /* Center the content */
-}
-.audience-image {
-    text-align: left; /* Align image to the left */
-    box-sizing: border-box;
-    padding-right: 80px; /* Add space between image and text */
-}
-.audience-image img {
-    max-width: 300px; /* Set maximum width for the image */
-    height: auto;
-    display: block;
-}
-.audience-text {
-    box-sizing: border-box;
-    font-family: Noto Sans;
-    font-size: medium;
-}
-.audience-title {
-    text-align: center; /* Center the Audience title */
-}
-/* Creating space after the audience section */
-.spacer {
-    height: 50px;
-}
+.audience-section,
 .vision-section {
     max-width: 800px;
-    margin: 0 auto;
-    overflow: hidden;
-    padding-top: 20px; /* Add space above the vision section */
-    padding-bottom: 20px; /* Add space below the vision section */
+    margin: 80px auto; /* Adjust for header space */
+    padding: 40px;
+    background-color: white; /* Match target background */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
 }
+.audience-content,
 .vision-content {
     display: flex;
-    flex-direction: row;
-    margin: 0 auto; /* Center the content */
+    align-items: center; /* Vertically align items */
 }
+.audience-image,
 .vision-image {
-    text-align: left; /* Align image to the left */
-    box-sizing: border-box;
-    padding-right: 80px; /* Add space between image and text */
+    flex: 1;
+    padding-right: 40px; /* Space between image and text */
 }
+.audience-image img,
 .vision-image img {
-    max-width: 300px; /* Set maximum width for the image */
+    max-width: 100%; /* Ensure the logo doesn't exceed the container's width */
     height: auto;
     display: block;
-}
-.vision-text {
-    box-sizing: border-box;
-    font-family: Noto Sans;
-    font-size: medium;
-}
-.vision-title {
-    text-align: center; /* Center the Vision title */
-}
-p {
-    font-family: Noto Sans;
 }
 .audience-text,
 .vision-text {
-    font-size: 18px; 
-    line-height: 1.5;
-    justify-content: left;
+    flex: 2;
+    font-size: 1.1em; /* Adjust font size */
+    line-height: 1.6; /* Increase line height */
+    color: #555; /* Match target text color */
+}
+.audience-title,
+.vision-title {
+    font-size: 2em; /* Adjust font size */
+    margin-bottom: 20px; /* Space below title */
+    color: #333; /* Match target color */
+    text-align: center; /* Center the Audience title */
+}
+p {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 1em; /* Adjust font size */
+    line-height: 1.6; /* Increase line height */
+    color: #555; /* Match target text color */
 }
 .title-frame {
     background-color: #4e87eb; /* Background color for the title frame */
@@ -129,15 +113,6 @@ p {
     margin-bottom: 15px; /* Add margin below the frame */
     text-align: center; /* Center the text within the frame */
 }
-.audience-title,
-.vision-title {
-    margin: 0; /* Reset margin for titles */
-}
-.spacer {
-    height: 50px;
-}
-/* CSS for the course section */
-
 .courses-section {
     text-align: center;
     margin: 20px auto 50px;
@@ -145,15 +120,12 @@ p {
     font-size: 18px; /* Increased font size */
     line-height: 1.6; /* Increased line height for space between lines */
 }
-
 .courses-section h2 {
     margin-top: 0;
 }
-
 .courses-section .course {
     margin-bottom: 40px; /* Add space between courses */
 }
-
 .courses-section h3 {
     margin-bottom: 10px; /* Add space below course titles */
 }
@@ -190,7 +162,7 @@ footer .social img {
     padding-top: 15px;
 }
 footer {
-    background-color: #4e87eb;
+    background-color: #333; /* Match target background */
     color: white;
     padding: 25px 50px;
     margin-top: 200px;
@@ -320,17 +292,18 @@ a:hover {
 .navbar a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    border-right: 1px solid white;
 }
 
 /* Change the color of links on hover */
 .navbar a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #4b73df;
+    color: white;
 }
 
 /* Add a color to the active/current link */

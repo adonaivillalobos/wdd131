@@ -6,6 +6,7 @@ h1, h2, h3 {
 }
 body {
     background-color: whitesmoke;
+    margin-bottom: 60px; /* Ensure enough space for the navbar */
 }
 /* Ensuring the header takes full width */
 header {
@@ -16,7 +17,8 @@ header {
 }
 /* Styling the logo */
 .logo img {
-    max-width: 100%;
+    width: 150px; /* Fixed width for the logo */
+    height: auto;
 }
 /* Styling the navigation */
 nav ul {
@@ -26,7 +28,7 @@ nav ul {
 nav ul li {
     display: inline;
     margin: 0 20px;
-    line-height: 50px;
+    line-height: 40px; /* Reduced line height */
     padding: 5px 10px;
 }
 nav ul li a {
@@ -174,7 +176,7 @@ footer .social img {
 footer {
     background-color: #4e87eb;
     color: white;
-    padding: 25 px 50px;
+    padding: 25px 50px; /* Corrected spacing issue */
     margin-top: 200px;
     display: flex;
     justify-content: space-around;
@@ -289,9 +291,9 @@ a:hover {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 14px; /* Adjusted padding */
     text-decoration: none;
-    font-size: 17px;
+    font-size: 16px;    /* Adjusted font size */
 }
 /* Change the color of the links on hover */
 .navbar a:hover {

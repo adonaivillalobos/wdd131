@@ -17,7 +17,7 @@ header {
 }
 /* Styling the logo */
 .logo img {
-    width: 150px; /* Fixed width for the logo */
+    width: 100%; 
     height: auto;
 }
 /* Styling the navigation */

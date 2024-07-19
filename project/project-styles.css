@@ -16,7 +16,7 @@ header {
 }
 /* Styling the logo */
 .logo img {
-    max-width: 100px; /* Adjust logo size */
+    max-width: 100%; /* Adjust logo size */
 }
 /* Styling the navigation */
 nav ul {
